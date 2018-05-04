@@ -5,7 +5,7 @@
 
 cd qemu
 
-CFLAGS="-O3" ./configure --disable-werror \
+CFLAGS="-O3" ./configure --disable-werror --disable-xen \
   --enable-system --enable-linux-user \
   --enable-guest-base --disable-gtk --disable-sdl --disable-vnc \
   --target-list="x86_64-linux-user x86_64-softmmu arm-softmmu aarch64-softmmu"
